@@ -98,11 +98,11 @@
 
 <body>
 
-    <div class="tabs">
-        <div a href="index.html" class="tab" onclick="loadContent('index.html')">Home</div>
-        <div a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</div>
-        <div a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</div>
-    </div>
+    <nav class="tabs">
+        <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
+        <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
+        <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
+    </nav>
     
     <video autoplay loop muted>
         <source src="video.mp4" type="video/mp4">
@@ -143,19 +143,6 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-
-    <script>
-        function loadContent(url) {
-            // Fetch the content from the external HTML file
-            fetch(url)
-                .then(response => response.text())
-                .then(html => {
-                    // Replace the content of the 'dynamicContent' div with the loaded HTML
-                    document.getElementById('dynamicContent').innerHTML = html;
-                })
-                .catch(error => console.error('Error loading content:', error));
-        }
-        </script>
     
 
 </body>
