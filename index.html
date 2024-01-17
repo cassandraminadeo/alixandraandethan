@@ -8,14 +8,15 @@
         body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 video {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw; /* Adjusted to cover the entire viewport width */
+    height: 100vh; /* Adjusted to cover the entire viewport height */
     object-fit: cover;
     z-index: -1;
 }
@@ -26,9 +27,9 @@ video {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    position: fixed;
     width: 100%;
     z-index: 2;
+    position: fixed;
     top: 0;
 }
 
@@ -42,7 +43,7 @@ video {
     text-align: center;
     color: #fff;
     padding: 20px;
-    margin-top: 80px; /* Adjusted margin to make space for the header */
+    margin-top: 80px;
 }
 
 section {
