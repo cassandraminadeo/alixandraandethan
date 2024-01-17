@@ -35,6 +35,8 @@
         .tab {
             cursor: pointer;
         }
+
+        
         .content {
             position: relative;
             z-index: 1;
@@ -49,6 +51,36 @@
             margin: 20px;
             border-radius: 10px;
         }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px;
+            background-color: white; /* Change to white */
+            color: #333; /* Change text color to dark */
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            width: 40%;
+        }
+
+        .header {
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    padding: 80px 80px 80px;
+    top: 60px; /* Adjust the value as needed */
+}
     </style>
 </head>
 <body>
@@ -66,6 +98,7 @@
     </video>
 
     <div class="content">
+        <h1> ______________________________________________________________________________</h1>
         <h1>Our Wedding</h1>
         <p>Celebrating the union of...</p>
     </div>
@@ -85,8 +118,21 @@
     <section>
         <h2>Contact Us</h2>
         <p>For any inquiries or assistance, feel free to contact us.</p>
-        <!-- Add more content as needed -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
+
+    
 
 </body>
 </html>
