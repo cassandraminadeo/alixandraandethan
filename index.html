@@ -21,6 +21,20 @@
             z-index: -1;
         }
 
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .tab {
+            cursor: pointer;
+        }
         .content {
             position: relative;
             z-index: 1;
@@ -28,9 +42,22 @@
             color: #fff;
             padding: 20px;
         }
+
+        section {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
+
+    <div class="tabs">
+        <div class="tab" onclick="showContent('home')">Home</div>
+        <div class="tab" onclick="showContent('registry')">Registry</div>
+        <div class="tab" onclick="showContent('faq')">FAQ</div>
+    </div>
 
     <!-- Replace 'your-video.mp4' with your actual video file or link -->
     <video autoplay loop muted>
@@ -39,10 +66,27 @@
     </video>
 
     <div class="content">
-        <h1>Alixandra & Ethan Tull</h1>
+        <h1>Our Wedding</h1>
         <p>Celebrating the union of...</p>
-        <!-- Add more content as needed -->
     </div>
+
+    <section>
+        <h2>Our Story</h2>
+        <p>Share the beautiful story of how you met and fell in love.</p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section>
+        <h2>Easy RSVP</h2>
+        <p>Make it easy for guests to RSVP to your wedding. Provide details and forms here.</p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>For any inquiries or assistance, feel free to contact us.</p>
+        <!-- Add more content as needed -->
+    </section>
 
 </body>
 </html>
