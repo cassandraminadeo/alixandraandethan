@@ -8,17 +8,15 @@
         body {
             margin: 0;
             padding: 0;
-            
         }
 
-        video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+        /* Use a background image instead of a video */
+        body {
+            background-image: url('img_1490.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Set to viewport height */
+            overflow: hidden; /* Hide overflow content */
         }
 
         .tabs {
@@ -33,22 +31,21 @@
         }
 
         .tab {
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
 
-.tab:hover {
-    background-color: #333;
-    color: #fff;
-}
+        .tab:hover {
+            background-color: #333;
+            color: #fff;
+        }
 
-        
         .content {
             position: relative;
             z-index: 1;
@@ -85,14 +82,6 @@
             cursor: pointer;
             width: 40%;
         }
-
-        .header {
-    position: fixed;
-    text-align: center;
-    color: #fff;
-    padding: 80px 80px 80px;
-    top: 60px; /* Adjust the value as needed */
-}
     </style>
 </head>
 <body>
@@ -102,14 +91,6 @@
         <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
         <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
     </nav>
-    
-    
-
-    <!-- Replace 'your-video.mp4' with your actual video file or link -->
-    <video autoplay loop muted>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
 
     <div class="content">
         <h1> ______________________________________________________________________________</h1>
@@ -117,35 +98,8 @@
         <p>XXXXXX</p>
     </div>
 
-    <section>
-        <h2>Our Story</h2>
-        <p>Share the beautiful story of how you met and fell in love.</p>
-        <!-- Add more content as needed -->
-    </section>
+   
 
-    <section>
-        <h2>Easy RSVP</h2>
-        <p>Make it easy for guests to RSVP to your wedding. Provide details and forms here.</p>
-        <!-- Add more content as needed -->
-    </section>
-
-    <section>
-        <h2>Contact Us</h2>
-        <p>For any inquiries or assistance, feel free to contact us.</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    
 
 </body>
 </html>
