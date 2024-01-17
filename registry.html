@@ -11,13 +11,7 @@
         }
 
         /* Use a background image instead of a video */
-        body {
-            background-image: url('img_1490.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            height: 100vh; /* Set to viewport height */
-            overflow: hidden; /* Hide overflow content */
-        }
+      
 
         .tabs {
             display: flex;
@@ -86,6 +80,14 @@
 </head>
 <body>
 
+    <style>   body {
+        background-image: url('img_1490.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Set to viewport height */
+        overflow: hidden; /* Hide overflow content */
+    }</style>
+
     <nav class="tabs">
         <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
         <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
@@ -97,9 +99,5 @@
         <h1>Registry</h1>
         <p>XXXXXX</p>
     </div>
-
-   
-
-
 </body>
 </html>
