@@ -6,81 +6,80 @@
     <title>Our Wedding</title>
     <style>
         body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
-video {
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .tab {
+            cursor: pointer;
+        }
+
+        
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px;
+            background-color: white; /* Change to white */
+            color: #333; /* Change text color to dark */
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            width: 40%;
+        }
+
+        .header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Adjusted to cover the entire viewport width */
-    height: 100vh; /* Adjusted to cover the entire viewport height */
-    object-fit: cover;
-    z-index: -1;
-}
-
-.tabs {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    width: 100%;
-    z-index: 2;
-    position: fixed;
-    top: 0;
-}
-
-.tab {
-    cursor: pointer;
-}
-
-.content {
-    position: relative;
-    z-index: 1;
     text-align: center;
     color: #fff;
-    padding: 20px;
-    margin-top: 80px;
-}
-
-section {
-    padding: 40px 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 20px;
-    border-radius: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input, textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-}
-
-button {
-    padding: 10px;
-    background-color: white;
-    color: #333;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    width: 40%;
-}
-
-.header {
-    position: fixed;
-    text-align: center;
-    color: #fff;
-    padding: 80px;
-    top: 60px;
+    padding: 80px 80px 80px;
+    top: 60px; /* Adjust the value as needed */
 }
     </style>
 </head>
@@ -101,7 +100,7 @@ button {
     <div class="content">
         <h1> ______________________________________________________________________________</h1>
         <h1>Our Wedding</h1>
-        <p>Celebrating the union of Alixandra and Ethan</p>
+        <p>Celebrating the union of...</p>
     </div>
 
     <section>
