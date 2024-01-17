@@ -98,9 +98,9 @@
 <body>
 
     <div class="tabs">
-        <div data-src="index.html" class="tab" onclick="showContent('index')">Home</div>
-        <div data-src="registry.html" class="tab" onclick="showContent('registry')">Registry</div>
-        <div data-src="faq.html" class="tab" onclick="showContent('faq')">FAQ</div>
+        <div data-src="index.html" class="tab" onclick="loadContent('index.html')">Home</div>
+        <div data-src="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</div>
+        <div data-src="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</div>
     </div>
     
     
@@ -147,20 +147,17 @@
     </section>
 
     <script>
-        function showContent(tabName) {
-            // Get all sections with class "content" and hide them
-            var contents = document.getElementsByClassName("content");
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = "none";
-            }
-    
-            // Show the selected content
-            var selectedContent = document.getElementById(tabName);
-            if (selectedContent) {
-                selectedContent.style.display = "block";
-            }
+        function loadContent(url) {
+            // Fetch the content from the external HTML file
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    // Replace the content of the 'dynamicContent' div with the loaded HTML
+                    document.getElementById('dynamicContent').innerHTML = html;
+                })
+                .catch(error => console.error('Error loading content:', error));
         }
-    </script>
+        </script>
     
 
 </body>
