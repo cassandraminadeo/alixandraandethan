@@ -97,11 +97,11 @@
 </head>
 <body>
 
-    <div class="tabs">
-        <div a href="index.html" class="tab" onclick="loadContent('index.html')">Home</div>
-        <div a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</div>
-        <div a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</div>
-    </div>
+    <nav class="tabs">
+        <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
+        <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
+        <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
+    </nav>
     
     
 
@@ -145,22 +145,6 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-
-    <script>
-        function showContent(tabName) {
-            // Get all sections with class "content" and hide them
-            var contents = document.getElementsByClassName("content");
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = "none";
-            }
-    
-            // Show the selected content
-            var selectedContent = document.getElementById(tabName);
-            if (selectedContent) {
-                selectedContent.style.display = "block";
-            }
-        }
-    </script>
     
 
 </body>
