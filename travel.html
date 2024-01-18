@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Assistance</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #c9c9c9;
+    color: #fff;
+        }
+
+        .header {
+            background-image: url('images/IMG_1492.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 800px; /* Adjust the height of your header */
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            color: #fff; /* Adjust text color for better visibility */
+            padding-top: 50px; /* Adjust top padding as needed */
+        }
+
+        .content {
+            margin-top: 300px; /* Adjust margin-top to leave space for the header */
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="tabs">
+        <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
+        <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
+        <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
+        <a href="travel.html" class="tab" onclick="loadContent('travel.html')">Travel</a>
+    </nav>
+
+    <div class="header">
+        <h1>Travel Assistance</h1>
+        <p>...</p>
+    </div>
+
+    <div class="content">
+        <!-- Your content goes here -->
+    </div>
+</body>
+</html>
