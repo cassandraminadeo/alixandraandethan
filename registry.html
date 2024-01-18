@@ -10,9 +10,6 @@
             padding: 0;
         }
 
-        /* Use a background image instead of a video */
-      
-
         .tabs {
             display: flex;
             justify-content: space-around;
@@ -36,68 +33,46 @@
         }
 
         .tab:hover {
-            background-color: #333;
-            color: #fff;
+            background-color: #c9c9c9;
+    color: #fff;
+        }
+
+        .header {
+            background-image: url('images/IMG_1490.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 800px; /* Adjust the height of your header */
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            color: #fff; /* Adjust text color for better visibility */
+            padding-top: 50px; /* Adjust top padding as needed */
         }
 
         .content {
-            position: relative;
-            z-index: 1;
+            margin-top: 300px; /* Adjust margin-top to leave space for the header */
             text-align: center;
             color: #fff;
             padding: 20px;
-        }
-
-        section {
-            padding: 40px 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        input, textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            width: 100%;
-        }
-
-        button {
-            padding: 10px;
-            background-color: white; /* Change to white */
-            color: #333; /* Change text color to dark */
-            border: none;
-            border-radius: 40px;
-            cursor: pointer;
-            width: 40%;
         }
     </style>
 </head>
 <body>
 
-    <style>   body {
-        background-image: url('images/IMG_1490.jpg'); /* Replace with your image URL */
-        background-size: cover;
-        background-position: center;
-        height: 100vh; /* Set to viewport height */
-        overflow: hidden; /* Hide overflow content */
-    }</style>
-
     <nav class="tabs">
         <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
         <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
         <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
+        <a href="travel.html" class="tab" onclick="loadContent('travel.html')">Travel</a>
     </nav>
 
-    <div class="content">
-        <h1> ______________________________________________________________________________</h1>
+    <div class="header">
         <h1>Registry</h1>
-        <p>XXXXXX</p>
+        <p>Your presence is the best present on our wedding day! But for those who are wondering or have inquired about registries, we have the following options listed below.</p>
+    </div>
+
+    <div class="content">
+        <!-- Your content goes here -->
     </div>
 </body>
 </html>
