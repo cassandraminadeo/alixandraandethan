@@ -10,9 +10,6 @@
             padding: 0;
         }
 
-        /* Use a background image instead of a video */
-      
-
         .tabs {
             display: flex;
             justify-content: space-around;
@@ -36,68 +33,113 @@
         }
 
         .tab:hover {
-            background-color: #333;
-            color: #fff;
+            background-color: #c9c9c9;
+    color: #fff;
+        }
+
+        .header {
+            background-image: url('images/IMG_1491.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 800px; /* Adjust the height of your header */
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            color: #fff; /* Adjust text color for better visibility */
+            padding-top: 50px; /* Adjust top padding as needed */
         }
 
         .content {
-            position: relative;
-            z-index: 1;
+            margin-top: 10px; /* Adjust margin-top to leave space for the header */
             text-align: center;
-            color: #fff;
+            color: #030303;
             padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columns */
+            gap: 10px; /* Adjust the gap between grid items */
         }
 
-        section {
-            padding: 40px 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 20px;
+        .grid-item {
+            background-color: rgba(182, 179, 179, 0.8);
+            padding: 20px;
             border-radius: 10px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        input, textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            width: 100%;
-        }
-
-        button {
-            padding: 10px;
-            background-color: white; /* Change to white */
-            color: #333; /* Change text color to dark */
-            border: none;
-            border-radius: 40px;
-            cursor: pointer;
-            width: 40%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <style>   body {
-        background-image: url('images/IMG_1491.jpg'); /* Replace with your image URL */
-        background-size: cover;
-        background-position: center;
-        height: 100vh; /* Set to viewport height */
-        overflow: hidden; /* Hide overflow content */
-    }</style>
-
     <nav class="tabs">
         <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
         <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
         <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
+        <a href="travel.html" class="tab" onclick="loadContent('travel.html')">Travel</a>
     </nav>
 
-    <div class="content">
-        <h1> ______________________________________________________________________________</h1>
+    <div class="header">
         <h1>Frequently Asked Questions</h1>
-        <p>XXXXXX</p>
     </div>
+
+    <div class="content">
+        <div class="grid-item">
+            <h3>Where is the wedding taking place?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>What time should I arrive?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>When should I RSVP by?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Is there a dress code?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Will the ceremony be taking palce indoors or outdoors?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Will food be served?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Are children invited?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Are credit and debit cards accepted at the venue, or do I need to bring cash?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Are you having an unplugged wedding?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Question?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Question?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Question?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Question?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Question?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Question?</h3>
+            <p>Answer is being discussed by the couple.</p>
+        </div>
 </body>
 </html>
