@@ -44,7 +44,7 @@
 }
 
 .tab:hover {
-    background-color: #333;
+    background-color: #c9c9c9;
     color: #fff;
 }
 
@@ -73,17 +73,18 @@
         input, textarea {
             margin-bottom: 10px;
             padding: 10px;
-            width: 100%;
+            width: 50%;
         }
 
         button {
             padding: 10px;
+            border-radius: 10px;
             background-color: white; /* Change to white */
             color: #333; /* Change text color to dark */
             border: none;
-            border-radius: 40px;
+            border-radius: 0px;
             cursor: pointer;
-            width: 40%;
+            width: 30%;
         }
 
         .header {
@@ -102,6 +103,7 @@
         <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
         <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
         <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
+        <a href="travel.html" class="tab" onclick="loadContent('travel.html')">Travel</a>
     </nav>
     
     <video autoplay loop muted>
@@ -129,10 +131,10 @@
             <input type="text" id="name" name="name" required>
 
             <label for="subscribe">I look forward to attending:</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" >
 
             <label for="subscribe">I unfortunately will not be able to make it:</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" >
 
             <button type="submit">Submit</button>
         </form>
