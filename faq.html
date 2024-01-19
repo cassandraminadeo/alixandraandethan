@@ -7,8 +7,25 @@
     <style>
 
 @media (max-width: 767px) {
-    /* Your mobile-specific styles here */
+    /* Mobile-specific styles go here */
+
+    body, html {
+        overflow-x: hidden; /* Example: Prevent horizontal scrolling on mobile devices */
+    }
+
+    /* Adjustments for smaller screens */
+    .tabs {
+        flex-direction: column; /* Stack tabs vertically for better mobile experience */
+    }
+
+    .tab {
+        width: 100%; /* Make tabs take full width on smaller screens */
+        margin-bottom: 5px; /* Add spacing between stacked tabs */
+    }
+
+    /* Other mobile-specific styles */
 }
+
 
 
         body {
