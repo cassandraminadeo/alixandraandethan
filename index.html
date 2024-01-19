@@ -88,24 +88,23 @@
         }
 
         .checkbox-group {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 80%; /* Adjusted width for better visibility on small screens */
-            box-sizing: border-box; /* Include padding and border in width calculation */
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center checkboxes horizontally */
+    width: 60%; /* Adjusted width for better visibility on small screens */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
 
-        .checkbox-label {
-            margin-bottom: 5px;
-            font-size: 16px; /* Adjusted font size for better readability */
-            
-            display: flex; /* Align checkbox and text on the same line */
-            align-items: center; /* Align items vertically */
-        }
+.checkbox-label {
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    font-size: 16px; /* Adjusted font size for better readability */
+    display: flex; /* Align checkbox and text on the same line */
+    align-items: center; /* Align items vertically */
+}
 
-        .checkbox-label input {
-            margin-right: 1px; /* Add margin between checkbox and text */
-        }
+.checkbox-label input {
+    margin-right: 10px; /* Add margin between checkbox and text */
+}
 
         button {
             padding: 10px 20px; /* Adjusted padding for better appearance */
@@ -139,7 +138,7 @@
 <body>
 
     <nav class="tabs">
-        <a href="/index.html" class="tab" onclick="loadContent('index.html')">Home</a>
+        <a href="index.html" class="tab" onclick="loadContent('index.html')">Home</a>
         <a href="registry.html" class="tab" onclick="loadContent('registry.html')">Registry</a>
         <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
         <a href="travel.html" class="tab" onclick="loadContent('travel.html')">Travel</a>
