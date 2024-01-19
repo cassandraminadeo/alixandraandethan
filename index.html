@@ -9,10 +9,27 @@
 
 @media (min-width: 800px) {
 
-    .checkbox-label input {
-            margin-right: 30px; /* Add margin between checkbox and text */
-            white-space: nowrap;
-        }
+    .checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center checkboxes horizontally */
+    width: 50%; /* Adjusted width for better visibility on small screens */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.checkbox-label {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    margin-top: 20px;
+    margin-left: 1px;
+    margin-right: auto;
+    font-size: 16px; /* Adjusted font size for better readability */
+    display: flex; /* Align checkbox and text on the same line */
+    align-items: center; /* Align items vertically */
+}
+
+.checkbox-label input {
+    margin-right: 5px; /* Add margin between checkbox and text */
+}
 }
 
          body {
