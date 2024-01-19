@@ -7,8 +7,17 @@
     <title>Our Wedding</title>
     <style>
 
+@media (min-width: 800px) {
 
-
+.checkbox-group {
+display: flex;
+flex-direction: row;
+align-items: center; /* Center checkboxes horizontally */
+justify-content: center; /* Center checkboxes horizontally */
+width: 30%; /* Adjusted width for better visibility on small screens */
+box-sizing: border-box; /* Include padding and border in width calculation */
+}
+}
          body {
             margin: 0;
             padding: 0;
