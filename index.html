@@ -156,13 +156,14 @@
     <section>
         <h2>Easy RSVP</h2>
         <p>Make it easy for guests to RSVP to your wedding. Provide details and forms here.</p>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="0df529c1-b418-480c-b4db-f11c25c935f9">
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="message">Will you be joining us?</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
-           
 
             <button type="submit">Submit</button>
         </form>
@@ -171,7 +172,10 @@
     <section>
         <h2>Contact Us</h2>
         <p>For any inquiries or assistance, feel free to contact us.</p>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="0df529c1-b418-480c-b4db-f11c25c935f9">
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -185,6 +189,7 @@
         </form>
     </section>
     
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
 </body>
 </html>
