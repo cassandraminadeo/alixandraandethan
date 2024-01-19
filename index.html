@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Travel Assistance</title>
+    
+    <title>Our Wedding</title>
     <style>
-        body {
+         body {
             margin: 0;
             padding: 0;
             overflow-x: hidden; /* Prevent horizontal scrolling */
-            text-align: center;
+        }
+
+        img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
 
         .tabs {
@@ -24,52 +34,99 @@
         }
 
         .tab {
-            cursor: pointer;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-decoration: none;
-            color: #333;
-            border: 2px solid #333;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        .tab:hover {
-            background-color: #c9c9c9;
+.tab:hover {
+    background-color: #c9c9c9;
     color: #fff;
-        }
+}
 
-        .header {
-            background-image: url('images/IMG_1492.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            height: 800px; /* Adjust the height of your header */
-            overflow: hidden;
-            position: relative;
-            text-align: center;
-            color: #fff; /* Adjust text color for better visibility */
-            padding-top: 50px; /* Adjust top padding as needed */
-        }
-
+        
         .content {
-            margin-top: 300px; /* Adjust margin-top to leave space for the header */
+            
+            z-index: 1;
             text-align: center;
             color: #fff;
             padding: 20px;
         }
 
         section {
-            margin-bottom: 20px;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
         }
 
-        h2 {
-            border-bottom: 2px solid #bfbfbf;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            display: inline-block;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 60%; /* Adjusted width for better visibility on small screens */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 80%; /* Adjusted width for better visibility on small screens */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+        }
+
+        .checkbox-label {
+            margin-bottom: 5px;
+            font-size: 16px; /* Adjusted font size for better readability */
+            white-space: nowrap; /* Prevent text from wrapping to the next line */
+            display: flex; /* Align checkbox and text on the same line */
+            align-items: center; /* Align items vertically */
+        }
+
+        .checkbox-label input {
+            margin-right: 30px; /* Add margin between checkbox and text */
+        }
+
+        button {
+            padding: 10px 20px; /* Adjusted padding for better appearance */
+            font-size: 16px; /* Adjusted font size for consistency */
+            text-decoration: none; /* Remove underline */
+            color: #333;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 50%; /* Adjusted width for better visibility on small screens */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c9c9c9;
+            color: #fff;
+        }
+
+        .header {
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    padding: 80px 80px 80px;
+    top: 60px; /* Adjust the value as needed */
+}
     </style>
 </head>
+
 <body>
 
     <nav class="tabs">
@@ -78,42 +135,57 @@
         <a href="faq.html" class="tab" onclick="loadContent('faq.html')">FAQ</a>
         <a href="travel.html" class="tab" onclick="loadContent('travel.html')">Travel</a>
     </nav>
+    
+    <img src="images/video.gif" alt="Wedding GIF">
 
-    <div class="header">
-        <h1>Travel Assistance</h1>
-        <p>...</p>
+    <div class="content">
+        <h1>Our Wedding</h1>
+        <p>Celebrating the union of Alixandra Christine Minadeo and Ethan Michael Tull</p>
     </div>
 
     <section>
-        <h2>Venue</h2>
-        <p>This is where the event will take place. Add details about the venue here.</p>
+        <h2>Our Story</h2>
+        <p>Share the beautiful story of how you met and fell in love.</p>
+        <!-- Add more content as needed -->
     </section>
 
-    <!-- Nearby Hotels Section -->
     <section>
-        <h2>Nearby Hotels</h2>
-        <p>Provide information about hotels in the vicinity of the event.</p>
+        <h2>Easy RSVP</h2>
+        <p>Make it easy for guests to RSVP to your wedding. Provide details and forms here.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <div class="checkbox-group">
+                <label class="checkbox-label" for="attend">
+                    <input type="checkbox" id="attend" name="attend"> I look forward to attending!
+                </label>
+                <label class="checkbox-label" for="notAttend">
+                    <input type="checkbox" id="notAttend" name="notAttend"> I unfortunately will not be able to make it.
+                </label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
-    <!-- Nearby Airports Section -->
     <section>
-        <h2>Nearby Airports</h2>
-        <p>List the airports that are close to the event location.</p>
+        <h2>Contact Us</h2>
+        <p>For any inquiries or assistance, feel free to contact us.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
-
-    <!-- Nearby Restaurants Section -->
-    <section>
-        <h2>Nearby Restaurants</h2>
-        <p>Recommend or list restaurants in the area where attendees can dine.</p>
-    </section>
-
-    <!-- Map Link Placeholder -->
-    <!-- Map Link Placeholder -->
-<section>
-    <h2>Map</h2>
-    <p>Insert a link to the map here: <a href="your_map_link">Map Link</a></p>
-</section>
-
+    
 
 </body>
 </html>
